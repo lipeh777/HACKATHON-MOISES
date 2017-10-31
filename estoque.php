@@ -1,6 +1,9 @@
 <?php
 
 session_start();
+	if (!isset($_SESSION['estoque'])) {
+        $_SESSION['estoque'] = array();
+    }
 
 
 $estoque = [
@@ -119,9 +122,8 @@ $estoque = [
 	],
 	
 ];
+    array_push($_SESSION['estoque'], $estoque);
+ var_dump($_SESSION['estoque']);
 
-$_SESSION['estoque'] = $estoque;
-
-header('location: relatorio.php');
 
 ?>
