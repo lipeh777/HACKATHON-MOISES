@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<style>
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+
+      padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+//buscador de dados
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Farmacia Estocagem</h1>
+</div>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li><a href="Remedios.html">Remedios</a></li>
+      <li><a href="cadastrarmedicamento.html">Cadastrar Remedios</a></li>
+      <li>Fatssuramento</li>
+      <li>Demanda</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+      
+  
+
+  </div>
+</div>
+
+<div  align="center" class="footer">
+  <p>Footer Text</p>
+</div>
+
+</body>
+</html>

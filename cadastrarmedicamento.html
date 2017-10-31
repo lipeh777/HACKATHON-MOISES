@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Cadastro de Remedios</title>
+<style>
+
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+
+      padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
+
+
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Farmacia Estocagem</h1>
+</div>
+
+
+
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Nome</label>
+    <input type="text" id="fname" name="firstname" placeholder="Nome do Remedio..">
+
+    <label for="lInformações">Informações</label>
+    <input type="text" id="lname" name="lastname" placeholder="Mais informações..">
+
+    <label for="Categoria do Remedio">Categoria do Remedio</label>
+    <select id="country" name="country">
+      <option value="australia">Categoria 1</option>
+      <option value="canada">Categoria 2</option>
+      <option value="usa">Categoria 3</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+<div  align="center" class="footer">
+  <p>Footer Text</p>
+</div>
+
+<div  align="center" class="footer">
+  <p><a href="iniciofarmacia.html">SAIR</a></p>
+</div>
+
+</body>
+</html>
