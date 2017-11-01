@@ -31,13 +31,22 @@
 * {
     box-sizing: border-box;
 }
-.header, .footer {
+.header{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
     background-color: #4CAF50;
     color: white;
 }
+.footer{
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%; 
+    height: 100px; 
+    background-color: green;
+    color: white;
+}
+
 .column {
     float: left;
     padding: 15px;
@@ -90,6 +99,19 @@ input[type=text]:focus {
     width: 100%;
 }
 
+body {
+    background-image: url("02.jpg");
+    background-repeat: no-repeat;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
 
 </style>
 </head>
@@ -99,25 +121,20 @@ input[type=text]:focus {
   <h1>Farmacia Estocagem</h1>
 </div>
 
-<form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
-
-
 <div class="clearfix">
   <div class="column menu">
     <ul>
       <li><a href="Remedios.html">Remedios</a></li>
       <li><a href="cadastrarmedicamento.html">Cadastrar Remedios</a></li>
-      <li>Fatssuramento</li>
+      <li>Faturamento</li>
       <li>Demanda</li>
     </ul>
   </div>
 
   <div class="column content">
-    <h1>The City</h1>
-    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
-    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+    <h1>Moisés Estoques</h1>
+    <h2>Onde você encontrará, a melhor empresa de estocagem de remédios de Pernambuco.
+Não perca tempo, além de estocar o seu produto com qualidade, nós da moisés estoques lhes garantimos o melhor serviço da região, com um preço bem acessível e que cabe no seu orçamento. Moisés estoques o melhor de pernambuco.</h2>
       
   
 
@@ -125,7 +142,8 @@ input[type=text]:focus {
 </div>
 
 <div  align="center" class="footer">
-  <p>Footer Text</p>
+  <p>Contato: (81) 3544-7869</p>
+  <p1>Site: www.moises.com.br</p1>
 </div>
 
 </body>
